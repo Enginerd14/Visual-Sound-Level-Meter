@@ -83,26 +83,49 @@ For my 4th attempt, I confirmed, using a logic probe, that the potentiometers in
 
 This worked and my circuit performed as expected. As I rotated the potentiometer, the LED lights turned on one by one as the voltage increased. Now, I will need to build an amplifying circuit for the microphone to replace the potentiometer.
 
+https://github.com/user-attachments/assets/2fd9c7aa-02a3-485f-bf35-63f800ede160
+
 Hours Spent:
 
 
 ## xx/xx/25 - 1st Iteration of LM3915 cascading circuit on Circuit Wizard
 
 I then looked to create a cascading circuit with the LM3915. This is when you combine two chips and two LED bar graphs so that one LED bar graph turns on fully and then the other begins to turn on once the first one is entirely on so it creates a single bar. This was my first attempt on circuit wizard to create a cascading circuit with the LM3915. However, the attempt was unsuccessful. 
+<img width="363" height="321" alt="image" src="https://github.com/user-attachments/assets/fc15e040-1131-4ddd-b515-c4d030c1a04f" />
+<img width="365" height="213" alt="image" src="https://github.com/user-attachments/assets/04292d4a-1dc0-4c92-be88-5447f8b5f867" />
+
+https://github.com/user-attachments/assets/24a29da8-6dcd-465d-8769-79b624df0bc3
 
 On my second attempt, one LED bar graph remained on for the full time while the other bar graph turned on sequentially.   
+<img width="506" height="508" alt="image" src="https://github.com/user-attachments/assets/ada5a91c-f880-4ec9-ba55-8f20fbfa90a8" />
+
+https://github.com/user-attachments/assets/679a3a3f-da81-4daf-b225-d38ebaf53af2
 
 For my third attempt, I followed the LM3915 datasheet for the circuit diagram that is shown on the left. This still did not work as expected. The LEDs on both of the bar graphs remained on fully. 
+<img width="621" height="190" alt="image" src="https://github.com/user-attachments/assets/83e2ad63-e6c5-44ee-9280-c3730a360ffb" />
+<img width="468" height="292" alt="image" src="https://github.com/user-attachments/assets/ba3f25e4-1ea3-4f40-ad03-81a52efe4362" />
+
+https://github.com/user-attachments/assets/b65bbbcb-cd1e-4f91-b2d6-47c6a777f7b1
 
 On my fourth try, I used another method of cascading the LM3915 from the datasheet. This worked better than before but still was not perfected as there was an overlap of LEDs between the bar graphs.
+<img width="465" height="290" alt="image" src="https://github.com/user-attachments/assets/7a990614-e487-4bde-953b-d485cd14c018" />
+<img width="561" height="239" alt="image" src="https://github.com/user-attachments/assets/585ea9c7-710a-473a-b900-d68258ee64fc" />
+
+https://github.com/user-attachments/assets/2ea70734-821a-4d35-a42e-a8c377013a76
 
 After many failed attempts, I changed my schematic to a another one as shown on the right. After connecting this up, it worked perfectly as all the LEDs turned on for the first bar graph before they turned on for the second bar.  I also fixed the order in which they turned on.
+<img width="434" height="295" alt="image" src="https://github.com/user-attachments/assets/0dfb5dcf-75ae-4591-b96b-169139d9e0d6" />
+<img width="515" height="221" alt="image" src="https://github.com/user-attachments/assets/eceded9c-47aa-46ed-87f0-f092bbac3b84" />
+
+https://github.com/user-attachments/assets/6c0bd98b-783c-4b2b-b63f-a9d15f8ed98b
 
 Hours Spent:
 
 ## xx/xx/25 - 1st Iteration of LM3915 cascading circuit 
 
 Using my working circuit wizard schematic, I breadboarded the cascading circuit and used a 1K potentiometer to act as the input signal which will be replaced by the microphone circuit amplified by the LM386 amplifier that I had breadboarded earlier. Upon changing the resistance of the potentiometer, the LEDs worked as expected and they turned on sequentially. This created the 20 LED scale that I will use in my project.
+
+https://github.com/user-attachments/assets/0518f570-b7a8-470e-89ca-3e4b90909c6f
 
 ## xx/xx/25 - 1st Iteration LM386
 
