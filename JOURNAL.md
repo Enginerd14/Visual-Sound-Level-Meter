@@ -126,6 +126,8 @@ Hours Spent:
 
 I connected my LM386 amplifier circuit to the analogue input signal of the LM3915 which is pin 5. On doing this, the LEDs turned on as the microphone picked up sound. However, the LEDs turned on simultaneously as the microphone detected sound. They should have turned on one by one as volume increases and then turn off one by one as it decreases.
 
+https://github.com/user-attachments/assets/eb3f0788-d1ea-40c4-9e93-2418777b1dde
+
 As expected, the LM386 amplifier was not strong enough to amplify the signal to a high enough range to power the LEDs. Therefore, I switched to a much stronger amplifier: the TDA7266. The TDA7266 is meant to amplify the signal from the microphone to a signal high enough for speakers. Thus, it should be more than sufficient for powering the range of the LEDs. 
 
 <img width="287" height="290" alt="image" src="https://github.com/user-attachments/assets/24317ad5-b548-41f2-be8a-bf2fa25c2812" />
@@ -146,7 +148,11 @@ Hours Spent:
 
 With a working microphone amplifying circuit using the TDA7266, I then looked at combining it with the LM3915. I connected the output pin from the TDA7266 to the signal input pin in my LM3915 cascading circuit. After powering on the entire circuit, I tested the combination. When the microphone picked up sound, the speaker still outputted this sound, ensuring that the TDA7266 was working as expected. However, despite connecting the circuits together, the LM3915 remained on fully, regardless of the microphone signal. 
 
+https://github.com/user-attachments/assets/f45f54c8-7b37-46e5-acf5-42d902fe9c2a
+
 Both circuits worked as expected individually, but when combining the two, they failed to produce the desired outcome. My first thought was that the TDA7266 used two output pins as one was meant for the black speaker wire( zero volts)  and the other for the red speaker wire (plus volts) but I only used one wire going from the plus volts output pin to the signal pin. However, this should not affect the circuit as it is only for grounding the speaker. Instead, I added a 100k resistor connecting the signal pin to ground but still allowing current to flow. This provided a reference for the LM3915 to sense voltage changes(from the microphone) from ground.
+
+https://github.com/user-attachments/assets/a47a75ed-9d45-499d-acfb-030a4748a6d8
 
 Hours Spent:
 
@@ -154,8 +160,14 @@ Hours Spent:
 
 Now that I had a working breadboard, I looked at making a Printed Circuit Board to house the components for my project. I have decided to make 3 PCBs for the 3 different parts of my project. One for the TDA7266 amplifying circuit with the microphone. One for the LM3915 IC. And one for the LED bar graphs. I started with the LM3915 PCB. On the right is my first attempt. When I tested the PCB, I found that the top LED bar graph turned on before the bottom one did which is the opposite of what was expected. 
 
+https://github.com/user-attachments/assets/6355bcd3-a77e-4e1f-9847-a17f8e9ea8c8
+
 To fix the mistake, I switched the circuitry for the chips around. This time when I powered my circuit, it worked perfectly and as expected. All of the LEDs on the bottom bar graph turned on sequentially and then all of the second LED bar graph turned on in the same way. 
 
+https://github.com/user-attachments/assets/0eb5199e-d0a9-4525-8dbc-cb6500f1c272
+
 I now had to create the PCB to have the LM3915 cascading circuit 3 times. I connected two PCB tracks from each end of the circuit. The one at the top going to all the circuits connected the plus volts. The one on the bottom connected to ground. This meant I only needed 2 wires from the battery pack to the tracks at either end, instead of using 6 wires going to each chip individually. 
+
+https://github.com/user-attachments/assets/5b7bbdbe-f083-471c-ab66-015706b1e16d
 
 Hours Spent:
