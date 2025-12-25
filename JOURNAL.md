@@ -199,3 +199,24 @@ I now had to create the PCB to have the LM3915 cascading circuit 3 times. I conn
 https://github.com/user-attachments/assets/5b7bbdbe-f083-471c-ab66-015706b1e16d
 
 Hours Spent:
+
+## xx/xx/25 - Producing the PCB
+
+First, I printed my circuit onto an acetate sheet. This will be used to make my circuit tracks on the pcb. 
+
+<img width="248" height="225" alt="image" src="https://github.com/user-attachments/assets/fba63467-295a-4f0d-a801-f597d904dc86" />
+
+Then I used the guillotine to cut the copper plated board into the correct size for the PCB.
+
+<img width="313" height="200" alt="image" src="https://github.com/user-attachments/assets/d087cf19-3176-4c4b-80f3-5459cde76cd5" />
+
+I then placed the acetate sheet on the copper side of the PCB and used the UV exposure box to soften the photoresist layer on the copper board.
+
+<img width="305" height="138" alt="image" src="https://github.com/user-attachments/assets/c1c4f265-8922-47c3-bb03-ba6d132fb32f" />
+
+Then using developer solution, I developed the tracks and used an acid etch tank to remove the excess copper.
+
+
+I then had a PCB ready. I used a multimeter and used continuity mode to ensure the tracks were all connected.
+
+I then relaised that I forgot the extra 
