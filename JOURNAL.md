@@ -4,21 +4,25 @@ I looked into the various methods of making a VU meter. One of the methods I dis
 <img width="531" height="235" alt="image" src="https://github.com/user-attachments/assets/05dbb6f9-f467-4926-9757-a3f85428fc5c" />
 <img width="412" height="260" alt="image" src="https://github.com/user-attachments/assets/fb74f05c-16f3-4d34-84a1-c21c48ac74a5" />
 
+Hours Spent: 3.5hrs
 
+## 5/11/25 - Researching methods
 I found another way of making a VU meter. This can be done through a LED bar graph and a LM39_ _ IC. The LED bar graph is composed of 10 LEDs stacked on top of each other to create a visual scale using light and colour. Most LEDs require resistors and this is the same for the LED bar graph. However, the LM39_ _,which is bar graph driver IC that is complementary to the LED bar graph, has a built in network of resistors within the chip itself. Thus, I will not require ten extra LEDs for the LEDs, reducing the bill of materials for my project.  The LM39_ _ driver comes in 3 variations: LM3914, LM3915 and LM3916. The LM3914 is a linear display used mainly in alarms and voltmeters. The LM3915 is a logarithmic display incremented by 3dB to turn each LED on after the previous one making it a good contender for a VU meter. The LM3916 is designed specifically for a VU meter which is a volume unit meter or also known as an audio visualizer therefore being a strong choice for this project. They all use the same circuit but have different levels of sensitivity to volume.  A demonstration of the circuits are on the next slide.
 
 <img width="445" height="307" alt="image" src="https://github.com/user-attachments/assets/7c8adf9c-64ce-4ce9-8a37-60e7ee32103e" />
 <img width="308" height="364" alt="image" src="https://github.com/user-attachments/assets/2b02a44c-2d47-43b9-892e-10e685477348" />
 <img width="271" height="362" alt="image" src="https://github.com/user-attachments/assets/25c81673-db5a-490a-87c1-160ab57af953" />
 
+Hours Spent: 5.5Hrs
+
+## 7/11/25 - Researching methods
 
 The third and final method for making this project is to use transistors. An example of a transistor that I could use is the common but versatile and useful BC547. This would take the input audio signal and amplify it to a higher signal that would be sufficient in driving an LED. Once reaching the adequate signal, the LEDs will turn on similar to an VU meter when transistors and LED are connected in line. However, this would mean that each LED would require its own transistor. This increases not only the bill of materials but also makes the project more bulky as the PCB would be more complicated and filled. Therefore, the project requires a casing large enough to house the entire circuit. 
 
 <img width="420" height="301" alt="image" src="https://github.com/user-attachments/assets/2149f0af-708e-4deb-b423-6399565228e8" />
 <img width="423" height="334" alt="image" src="https://github.com/user-attachments/assets/ea18e501-9e5a-484e-a2cd-e018750451b7" />
 
-This was not done in one sitting but I combined it for ease of reading :)
-Hours Spent: 8.25Hrs
+Hours Spent: 4Hrs
 
 ## 9/11/25 - Chosen Method
 
@@ -88,7 +92,7 @@ Pin 8(Ref Adj): Sets the reference voltage and controls the sensitivity
 
 Pin 9 (Mode): This controls the sequence of the LEDs, either in DOT mode(one LED turned on sequentially) or BAR mode(LEDs turn on consecutively)
 
-Hours Spent:
+Hours Spent: 3Hrs
 
 ## 15/11/25 - 1st Iteration of LM3915
 To start prototyping my project, I first attempted to breadboard the LM3915 circuit non-cascading and using a potentiometer to create an analogue signal as a substitute for the microphone. On this attempt, however, the circuit didn’t work as expected. After thoroughly investigating my breadboard further alongside the datasheet for the LM3915, I discovered my mistake. I found that the circuit wasn’t working because in the data sheet, the cathode, which is the positive leg, of the LED was supposed to be connected to the output pins of the LM3915. Then the anode was meant to be connected to the plus volts which is the row where the red wire feeds into. In my breadboard though, I had connected the anode to the output pins and the resistors to the cathode of the LED which were connected to ground. Therefore my circuit failed to work.
