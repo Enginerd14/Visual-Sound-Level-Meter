@@ -1,4 +1,4 @@
-## 12/08/25 - Researching methods
+## 4/11/25 - Researching methods
 I looked into the various methods of making a VU meter. One of the methods I discovered was using a Programmable Integrated Circuit (PIC)  such as the Genie 20. The Genie 20 has seven output pins allowing it to power seven LEDs as the visual indicator for the VU meter. Each LED would require a 220Ω adding to the bill of materials. Using a programmable circuit, I can use a flowchart to control the chip and control which LEDs turn on depending on the signal level. I used circuit wizard to create both the circuit and the flowchart. Screenshots can be found below. In the flowchart, the analogue signal box checks if the input signal matches the signal range that I have provided. The range goes from 0 to 255 and I split this equally to determine which LEDs will turn on. In my circuit, I used an LDR for visual representation as Circuit wizard does not have a microphone as one of the available components so the LDR acts as the analogue signal that would be coming from the microphone. I can then program the flowchart in multiple ways: I could either have the LEDs move from the middle going outwards as the volume increases or have them move from bottom to top instead. This makes this method a very flexible and customisable circuit. 
 
 <img width="531" height="235" alt="image" src="https://github.com/user-attachments/assets/05dbb6f9-f467-4926-9757-a3f85428fc5c" />
@@ -20,7 +20,7 @@ The third and final method for making this project is to use transistors. An exa
 This was not done in one sitting but I combined it for ease of reading :)
 Hours Spent: 8.25Hrs
 
-## 15/08/25 - Chosen Method
+## 9/11/25 - Chosen Method
 
 I have chosen a microphone for the audio input so the device can be used wherever sound is present, rather than relying on a cable connection.
 
@@ -41,7 +41,7 @@ Hours Spent: 2Hrs
 Hours Spent: 
 
 
-## 17/08/25 - Researching the history
+## 10/11/25 - Researching the history
 #### The LED
 In 1907, Henry Joseph Round first discovered electroluminescence while working with silicon carbide crystals. His discovery occurred while he was applying an electric current to the crystals, causing him to notice that they emitted light. This discovery was integral to the development of the LED as it paved the way for Nick Holonyak Jr, an American engineer. Holonyak Jr created the first practical LED, emitting a colour on the visible spectrum in 1962. He used a material called gallium arsenide phosphide to produce an LED that emitted visible red light upon applying a current to it. This is an example of a technology push causing the further development of the LED making a commercially and scientifically significant difference to the production of electronic goods. 
 
@@ -58,20 +58,46 @@ Emile Berliner was the first to create a practical microphone in 1876. He develo
 
 Hours Spent: 3.5Hrs
 
-## 18/08/25 - CAD model design
+## 10/11/25 - CAD model design
 
 I created a few CAD designs of what the different final outcomes could look like but these were not to scale and were only an illustration of what it could look like. 
 
 Hours Spent: 5.25Hrs
 
-## 19/08/25 - 1st Iteration of LM3915
+## 13/11/25 - Finding out how the LM3915 works
+
+I studied the datasheet intensely to find out how the circuit works. This is what I found...
+
+The LM3915 is an analogue display driver that takes a input voltage to drive a 10 segment LED bar graph/ 10 LEDs using an internal logarithmic scale which increments by 3dB per step. This is ideal for sound applications as it matches how we perceive loudness.
+
+Below is a list of the pins and their purpose:
+
+Pin 1 and 10-18: These pins connect to the LEDs
+
+Pin 2 and 3: These pins provide power to the IC and complete the circuit
+
+Pin 4 (Ref Low): The bottom of the scale where first LED turns on
+
+Pin 5 (Signal): This pin takes the Input Audio signal
+
+Pin 6 (Ref High): The top of the scale where top LED turns on
+
+Pin 7(Ref Out): Controls LED current changing brightness of the LED
+
+Pin 8(Ref Adj): Sets the reference voltage and controls the sensitivity
+
+Pin 9 (Mode): This controls the sequence of the LEDs, either in DOT mode(one LED turned on sequentially) or BAR mode(LEDs turn on consecutively)
+
+Hours Spent:
+
+## 15/11/25 - 1st Iteration of LM3915
 To start prototyping my project, I first attempted to breadboard the LM3915 circuit non-cascading and using a potentiometer to create an analogue signal as a substitute for the microphone. On this attempt, however, the circuit didn’t work as expected. After thoroughly investigating my breadboard further alongside the datasheet for the LM3915, I discovered my mistake. I found that the circuit wasn’t working because in the data sheet, the cathode, which is the positive leg, of the LED was supposed to be connected to the output pins of the LM3915. Then the anode was meant to be connected to the plus volts which is the row where the red wire feeds into. In my breadboard though, I had connected the anode to the output pins and the resistors to the cathode of the LED which were connected to ground. Therefore my circuit failed to work.
 
 <img width="633" height="295" alt="image" src="https://github.com/user-attachments/assets/3a063a26-2a87-4f97-87a9-aab5ce019e4e" />
 
 Hours Spent: 3Hrs
 
-## 20/08/25 - 2nd Iteration of LM3915
+## 16/11/25 - 2nd Iteration of LM3915
 
 After correcting the circuit by connecting the anode to the output pins of the LM3915 the circuit still failed. After further examination of the circuit, I noticed that I had connected the resistors for the reference voltage in the same track causing it to short circuit and therefore fail. Furthermore, the LEDs should have be connected to plus volts as well as I had discovered in my first iteration. However, I had forgotten to do this , further contributing to the failure of the circuit.
 
@@ -87,7 +113,7 @@ However, again, the circuit didn’t work completely as expected. All of the LED
 
 Hours Spent: 4Hrs
 
-## 21/08/25 - 3rd Iteration of LM3915
+## 17/11/25 - 3rd Iteration of LM3915
 
 For my 4th attempt, I confirmed, using a logic probe, that the potentiometers input was working. Alongside this, I also found that the outputs of the LM3915 chip were held high when they should have been low. Therefore I decided to rewire the LEDs directly to the chip with no resistors as the IC chip already has a network of resistors built in.
 
@@ -99,7 +125,7 @@ https://github.com/user-attachments/assets/2fd9c7aa-02a3-485f-bf35-63f800ede160
 
 Hours Spent: 2.5Hrs
 
-## 22/08/25 - 1st Iteration of LM3915 cascading circuit on Circuit Wizard
+## 18/11/25 - 1st Iteration of LM3915 cascading circuit on Circuit Wizard
 
 I then looked to create a cascading circuit with the LM3915. This is when you combine two chips and two LED bar graphs so that one LED bar graph turns on fully and then the other begins to turn on once the first one is entirely on so it creates a single bar. This was my first attempt on circuit wizard to create a cascading circuit with the LM3915. However, the attempt was unsuccessful. 
 
@@ -137,7 +163,7 @@ https://github.com/user-attachments/assets/6c0bd98b-783c-4b2b-b63f-a9d15f8ed98b
 
 Hours Spent: 6.5Hrs
 
-## 23/08/25 - 1st Iteration of LM3915 cascading circuit 
+## 20/11/25 - 1st Iteration of LM3915 cascading circuit 
 
 Using my working circuit wizard schematic, I breadboarded the cascading circuit and used a 1K potentiometer to act as the input signal which will be replaced by the microphone circuit amplified by the LM386 amplifier that I had breadboarded earlier. Upon changing the resistance of the potentiometer, the LEDs worked as expected and they turned on sequentially. This created the 20 LED scale that I will use in my project.
 
@@ -145,7 +171,7 @@ https://github.com/user-attachments/assets/0518f570-b7a8-470e-89ca-3e4b90909c6f
 
 Hours Spent: 2.5Hrs
 
-## 25/08/25 - 1st Iteration LM386
+## 21/11/25 - 1st Iteration LM386
 
 To create the amplifying circuit for the microphone, I had two component options : the LM386 and the TDA7266. I chose to begin with the LM386 Op-amp which was the simpler but in turn weaker amplifier. This was my first attempt at creating the amplifier circuit with the LM386 to amplify the microphone signal and input it into as the analogue signal for the LM3915 instead of the current potentiometer. However my attempt was not entirely successful as the circuit was too sensitive and some LEDs remained on even when there was no audible sound. One of the reasons that this could be happening is because of the constant but quiet 50Hz of Alternating current. The fix for this is too include some way of altering the sensitivity of the microphone signal that is being amplified. A method of doing this would be to include a potentiometer between the input signal pin in the amplifier chip and the microphone.
 
@@ -154,7 +180,7 @@ To create the amplifying circuit for the microphone, I had two component options
 
 Hours Spent: 3Hrs
 
-## 26/08/25 - 2nd Iteration of LM386
+## 22/11/25 - 2nd Iteration of LM386
 
 For the second attempt, I used a 10K potentiometer between pin 3, the analogue input signal for the amplifying chip, and the microphone, as seen in the circuit diagram below, allowing me to adjust the sensitivity of the microphone. This worked effectively and meant the LEDs remained off when there was no audible sound that could be heard by the human ear. 
 
@@ -163,7 +189,7 @@ For the second attempt, I used a 10K potentiometer between pin 3, the analogue i
 
 Hours Spent: 2Hrs
 
-## 27/08/25 - 1st Iteration of LM3915 and LM386
+## 24/11/25 - 1st Iteration of LM3915 and LM386
 
 I connected my LM386 amplifier circuit to the analogue input signal of the LM3915 which is pin 5. On doing this, the LEDs turned on as the microphone picked up sound. However, the LEDs turned on simultaneously as the microphone detected sound. They should have turned on one by one as volume increases and then turn off one by one as it decreases.
 
@@ -175,7 +201,23 @@ As expected, the LM386 amplifier was not strong enough to amplify the signal to 
 
 Hours Spent: 3.5hrs
 
-## 30/08/25 - 1st Iteration of TDA7266
+## 25/11/25 - Researching TDA7266
+
+To create the TDA7266, I looked into the datasheet to see what I needed to connect and how it worked before prototyping.
+
+Pin 1(OUT1+): Output pin for the red (positive) wire of the speaker. This is the one we will join to the input pin of the LM3915
+Pin 2(OUT1-): Output pin for the black (negative) wire of the speaker. This is not required for the LM3915.
+Pin 3 and 13(VCC): Power supply (plus volts) connected with two capacitors
+Pin 4(IN1): Input signal from microphone with 0.22 microfarads capacitor(or a value close enough)
+Pin 7(ST-BY): This controls whether the amplifier is active or in Standby by using a voltage threshold
+Pin 9(S-GND): Power supply (0V/ ground)
+Circuit wizard didn't have this component available either so instead I breadboarded it directly and have attached an image of my working breadboard as well as the circuit diagram provided in the datasheet.
+
+To combine the microphone with the TDA7266, the microphone requires its own circuit. This consists of a 1.5K resistor connected from the ground voltage to the ground pin of the microphone (shown by the metal connecting the pin to the outer casing of the microphone). The positive pin connects to pin 4 of the TDA7266.
+
+Hours Spent:3Hrs
+
+## 26/11/25 - 1st Iteration of TDA7266
 
 I breadboarded the TDA7266 circuit and I used the speaker to test whether the microphone and my amplifier circuit were working. Once I powered my circuit, I should have heard a click from the speaker when the microphone picked up on some sound but this did not occur. Upon further inspection, it was clear that the pins of the amplifier chip were not in the breadboard. This was due to the awkward shape of the pins. To fix this I used a pair of pliers to bend and force the pins into the breadboard. Once the pins were fitted in, I again powered the circuit and used the speaker to test the circuit. This time I could clearly hear the speaker when the microphone picked up sound.
 
@@ -185,7 +227,7 @@ I breadboarded the TDA7266 circuit and I used the speaker to test whether the mi
 
 Hours Spent: 3.5Hrs
 
-## 2/09/25 - 1st Iteration of LM3915 and TDA7266
+## 28/11/25 - 1st Iteration of LM3915 and TDA7266
 
 With a working microphone amplifying circuit using the TDA7266, I then looked at combining it with the LM3915. I connected the output pin from the TDA7266 to the signal input pin in my LM3915 cascading circuit. After powering on the entire circuit, I tested the combination. When the microphone picked up sound, the speaker still outputted this sound, ensuring that the TDA7266 was working as expected. However, despite connecting the circuits together, the LM3915 remained on fully, regardless of the microphone signal. 
 
@@ -197,7 +239,7 @@ https://github.com/user-attachments/assets/a47a75ed-9d45-499d-acfb-030a4748a6d8
 
 Hours Spent: 4hrs
 
-## 3/09/25 - Designing the PCB
+## 29/11/25 - Designing the PCB
 
 Now that I had a working breadboard, I looked at making a Printed Circuit Board to house the components for my project. I have decided to make 3 PCBs for the 3 different parts of my project. One for the TDA7266 amplifying circuit with the microphone. One for the LM3915 IC. And one for the LED bar graphs. I started with the LM3915 PCB. On the right is my first attempt. When I tested the PCB, I found that the top LED bar graph turned on before the bottom one did which is the opposite of what was expected. 
 
@@ -213,7 +255,7 @@ https://github.com/user-attachments/assets/5b7bbdbe-f083-471c-ab66-015706b1e16d
 
 Hours Spent: 5Hrs
 
-## 5/09/25 - Producing the PCB
+## 30/11/25 - Producing the PCB
 
 First, I printed my circuit onto an acetate sheet. This will be used to make my circuit tracks on the pcb. 
 
@@ -237,13 +279,13 @@ WHile drilling holes in my PCB, I  realised that I forgot the copper pads where 
 
 Hours Spent: 5.5hrs
 
-## 6/09/25
+## 1/12/25
 
 I added in the pads and remade my PCB. Again, using the multimeters' continuity mode, I tested whether the tracks were all connected. I then began drilling the holes on the PCB which took some time considering there were over 200 holes which I had to hand drill! I then began soldering some of my components.
 
 Hours Spent: 5hrs
 
-## 7/09/25
+## 2/12/25
 
 I finished soldering the components and all of the wires which was a LOT! 
 
@@ -251,19 +293,19 @@ I finished soldering the components and all of the wires which was a LOT!
 
 Hours Spent: 4Hrs
 
-## 9/09/25 - Designing the LED PCB
+## 4/12/25 - Designing the LED PCB
 
 I began designing the PCB for the LED bar graphs to sit on the top of all of the PCBs. 
 
 Hours Spent: 2.5Hrs
 
-## xx/xx/25 - Producing the LED PCB
+## 6/12/25 - Producing the LED PCB
 
 I produced the PCB and once again tested the continutity of the tracks using a multimeter. Everything looked good so I began drilling the 360 holes with a hand drill :(
 
 Hours Spent: 5Hrs
 
-## xx/xx/25 - Testing the PCBs
+## 7/12/25 - Testing the PCBs
 
 I combined the LED bar graph and the control PCB. 
 
@@ -271,21 +313,21 @@ It didn't work :(
 
 I tested the LED PCB which was working perfectly so it has to be the control PCB. I used a logic probe to test the control PCB and noticed a lot of mistakes. I required a lot of wire jumpers and also forgot to have a track connecting ground for all f the different parts of the circuit. I had to redesign and remake it. At least I don't have to drill 360 holes this time, only 200 :(
 
-Hours Spent:
+Hours Spent: 3.5hrs
 
-## xx/xx/25 - Redesigning the main PCB
+## 8/12/25 - Redesigning the main PCB
 
-I decided to completely redesign my PCB and start from scratch. This was extremely difficult and time consuming to make sure all the tracks were connected and did not cross. But in the end I managed to simplify it and remove all of my wire jumpers and also reduce the size significantly. ( It now fits within the palm of my hand!!!)
+I decided to completely redesign my PCB and start from scratch. This was extremely difficult and time consuming to make sure all the tracks were connected and did not cross but also keep it at a acceptable size. But in the end I managed to simplify it and remove all of my wire jumpers and also reduce the size significantly. ( It now fits within the palm of my hand!!!)
 
-Hours Spent:
+Hours Spent: 4Hrs
 
-## xx/xx/25 - Producing the redesigned main PCB
+## 9/12/25 - Producing the redesigned main PCB
 
-Once more I produced my PCB and tested the continuity using a multimeter. Once ensuring all tracks were connected, I promptly began the drilling. 
+Once more, I produced my PCB and tested the continuity using a multimeter. Once ensuring all tracks were connected, I promptly began the drilling. 
 
-Hours Spent:
+Hours Spent: 3.5Hrs
 
-## xx/xx/25 - Soldering my PCB
+## 10/12/25 - Soldering my PCB
 
 I began and managed to complete all of the soldering of my PCB. I decided not to solder every wire this time, only a couple for testing first. 
 
@@ -293,15 +335,15 @@ I connected both PCBs. I connected the power wires to my breadboard. And then I 
 
 And IT WORKED!!!!
 
-Hours Spent:
+Hours Spent: 4hrs
 
-## xx/xx/25 - TDA7266 PCB
+## 12/12/25 - TDA7266 PCB
 
 I began designing my final PCB: the TDA7266 amplifier with the microphone. This was difficult as my working protoype was slighlty different to the schematic on the datasheet, but I managed in the end using a multimeter to test the values of all my components in my PCB. 
 
 I can't wait to finish it and I'm so close but unfortunately, this as far as I can get for now with this project as I have exams coming up :( 
 
-Hours Spent:
+Hours Spent: 3Hrs
 
 
 
