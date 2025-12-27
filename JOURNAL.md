@@ -36,16 +36,20 @@ I also decided to test both the LM386 and the TDA7266 as the audio amp and choos
 
 Finally, to provide the visual output I decided on the LED bar graph which is generally composed of 10 LEDs and has a compact size with an aesthetic appeal but you can also use a number of LEDs instead.
 
-Hours Spent: 0.5Hrs
+I created a specification of what features I wanted in my project.
 
-## 16/08/25 - Specification
+1) Appealing casing/ components 
+2) Large range of LEDs that turn on at a different volume range
+3) Size - No smaller than (H)50mm x (L)60mm x (W)30mm,  No bigger than (H)70mm x (L)80mm x (W)40mm
+4) Sensitive microphone
+5) Bright colours
+6) Using LED bar graph
+7) Use batteries for portability and maintain small size
+8) Minimalistic design
+9) Durable, appealing,  High quality materials
+10) Opening at back for easy access to circuit allowing for replacing batteries and fixing future problems
 
-
-
-
-
-Hours Spent: 
-
+Hours Spent: 1Hrs
 
 ## 10/11/25 - Researching the history
 #### The LED
@@ -378,6 +382,8 @@ Hours Spent: 3Hrs
 ## 9/12/25 - Producing the redesigned main PCB
 
 Once more, I produced my PCB and tested the continuity using a multimeter. Once ensuring all tracks were connected, I promptly began the drilling. 
+
+<img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/1de8ff2a-ece3-4670-9228-99cc21aa90d7" />
 
 Hours Spent: 2Hrs
 
