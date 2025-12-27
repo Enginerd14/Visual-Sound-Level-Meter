@@ -245,7 +245,7 @@ Hours Spent: 4hrs
 
 ## 29/11/25 - Designing the PCB
 
-Now that I had a working breadboard, I looked at making a Printed Circuit Board to house the components for my project. I have decided to make 3 PCBs for the 3 different parts of my project. One for the TDA7266 amplifying circuit with the microphone. One for the LM3915 IC. And one for the LED bar graphs. I started with the LM3915 PCB. On the right is my first attempt. When I tested the PCB, I found that the top LED bar graph turned on before the bottom one did which is the opposite of what was expected. 
+Now that I had a working breadboard, I looked at making a Printed Circuit Board to house the components for my project. I thought about making 3 PCBs for the 3 different parts of my project. One for the TDA7266 amplifying circuit with the microphone. One for the LM3915 IC. And one for the LED bar graphs. I started with the LM3915 PCB. Below is my first attempt. When I tested the PCB, I found that the top LED bar graph turned on before the bottom one did which is the opposite of what was expected. 
 
 https://github.com/user-attachments/assets/6355bcd3-a77e-4e1f-9847-a17f8e9ea8c8
 
@@ -258,6 +258,36 @@ I now had to create the PCB to have the LM3915 cascading circuit 3 times. I conn
 https://github.com/user-attachments/assets/5b7bbdbe-f083-471c-ab66-015706b1e16d
 
 Hours Spent: 5Hrs
+
+## 29/11/25 - Designing the PCB
+
+I decided to try a couple more PCBs before settling on one. I looked at making a single column with 3 LED bar graphs instead. 
+
+<img width="135" height="406" alt="image" src="https://github.com/user-attachments/assets/63a30ebf-a4ab-4f73-b8c8-ab48fa772406" />
+<img width="540" height="356" alt="image" src="https://github.com/user-attachments/assets/893e8822-16a0-4cf2-a018-3df7a4fc39c4" />
+<img width="557" height="361" alt="image" src="https://github.com/user-attachments/assets/f155a684-4d47-4049-adb7-398f2b0dfbb2" />
+<img width="139" height="399" alt="image" src="https://github.com/user-attachments/assets/5e47308f-5955-44a2-96f8-375a4bd4eade" />
+
+Hours Spent: 4Hrs
+
+## 29/11/25 - Designing the PCB
+
+Another version I thought of was having the entire components on one PCB. I was hesitant due to the amount of non functional space there would be on the casing but I wanted to see how it would look. 
+
+<img width="161" height="587" alt="image" src="https://github.com/user-attachments/assets/5b8bed7f-06e7-409e-9fd4-963c34e22889" />
+<img width="143" height="577" alt="image" src="https://github.com/user-attachments/assets/5b5b48e8-28ee-4421-83cc-6204c0c9f94a" />
+
+I decided that my first version was best as it looked best and worked the same.
+
+Hours Spent: 3.5Hrs
+
+## 29/11/25 - Fixing my final PCB
+
+I realised that my fianl PCB was using the wrong potentiometers to what I had readily available and that CIrcuit Wizard doesn't actually have a schematic for the pot that I was going to use. So, I just used three copper pads instead and placed them to the size of the pot that I will be using. This did mean I had to redesign a lot of the PCB as the old pot had large spaces allowing the tracks to passthrough but this one will not.
+
+<img width="536" height="350" alt="image" src="https://github.com/user-attachments/assets/07ef4755-a293-4e13-b239-8734cf34d17f" />
+
+Hours Spent: 3.5Hrs
 
 ## 30/11/25 - Producing the PCB
 
@@ -287,6 +317,10 @@ Hours Spent: 5.5hrs
 
 I added in the pads and remade my PCB. Again, using the multimeters' continuity mode, I tested whether the tracks were all connected. I then began drilling the holes on the PCB which took some time considering there were over 200 holes which I had to hand drill! I then began soldering some of my components.
 
+<img width="387" height="231" alt="image" src="https://github.com/user-attachments/assets/0b0bdfa5-8d3c-4acf-9994-e0d7dfc819d1" />
+<img width="362" height="237" alt="image" src="https://github.com/user-attachments/assets/5d68946d-fd5c-496b-9932-0d1b6d78b969" />
+
+
 Hours Spent: 5hrs
 
 ## 2/12/25
@@ -315,7 +349,7 @@ I combined the LED bar graph and the control PCB.
 
 It didn't work :( 
 
-I tested the LED PCB which was working perfectly so it has to be the control PCB. I used a logic probe to test the control PCB and noticed a lot of mistakes. I required a lot of wire jumpers and also forgot to have a track connecting ground for all f the different parts of the circuit. I had to redesign and remake it. At least I don't have to drill 360 holes this time, only 200 :(
+I tested the LED PCB which was working perfectly so it has to be the control PCB. I used a logic probe to test each pin and each track of my control PCB and noticed a lot of mistakes. I required a lot of wire jumpers and also forgot to have a track connecting ground for all f the different parts of the circuit. I had to redesign and remake it. At least I don't have to drill 360 holes this time, only 200 :(
 
 Hours Spent: 3.5hrs
 
@@ -323,13 +357,20 @@ Hours Spent: 3.5hrs
 
 I decided to completely redesign my PCB and start from scratch. This was extremely difficult and time consuming to make sure all the tracks were connected and did not cross but also keep it at a acceptable size. But in the end I managed to simplify it and remove all of my wire jumpers and also reduce the size significantly. ( It now fits within the palm of my hand!!!)
 
+<img width="262" height="386" alt="image" src="https://github.com/user-attachments/assets/ab6d3571-4391-4777-83c7-882de8933bfa" />
+<img width="467" height="340" alt="image" src="https://github.com/user-attachments/assets/be4df7e0-2f32-49fe-81b7-e6d171a67bb6" />
+<img width="487" height="341" alt="image" src="https://github.com/user-attachments/assets/545e6d23-0b49-40a6-bd3b-06c12e9b88d1" />
+<img width="211" height="340" alt="image" src="https://github.com/user-attachments/assets/ed1310c6-e0ae-4416-9b8c-9f1a1eefb53a" />
+<img width="428" height="307" alt="image" src="https://github.com/user-attachments/assets/508504e3-0825-4bcf-9e40-472b345b2cb4" />
+<img width="658" height="503" alt="image" src="https://github.com/user-attachments/assets/001398ef-a524-4d61-9829-1116ccaf96a1" />
+
 Hours Spent: 4Hrs
 
 ## 9/12/25 - Producing the redesigned main PCB
 
 Once more, I produced my PCB and tested the continuity using a multimeter. Once ensuring all tracks were connected, I promptly began the drilling. 
 
-Hours Spent: 3.5Hrs
+Hours Spent: 4.5Hrs
 
 ## 10/12/25 - Soldering my PCB
 
@@ -345,9 +386,12 @@ Hours Spent: 4hrs
 
 I began designing my final PCB: the TDA7266 amplifier with the microphone. This was difficult as my working protoype was slighlty different to the schematic on the datasheet, but I managed in the end using a multimeter to test the values of all my components in my PCB. 
 
+<img width="524" height="383" alt="image" src="https://github.com/user-attachments/assets/cc06ef15-ed41-4fdf-ace4-4acc732d147e" />
+<img width="519" height="372" alt="image" src="https://github.com/user-attachments/assets/fd6d4ddf-ae5c-4138-8f81-976d7717107b" />
+
 I can't wait to finish it and I'm so close but unfortunately, this as far as I can get for now with this project as I have exams coming up :( 
 
-Hours Spent: 3Hrs
+Hours Spent: 3.5Hrs
 
 
 
