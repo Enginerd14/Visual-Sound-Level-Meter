@@ -70,7 +70,11 @@ Hours Spent: 2Hrs
 
 ## 10/11/25 - CAD model design
 
-I created a few CAD designs of what the different final outcomes could look like but these were not to scale and were only an illustration of what it could look like. 
+I created a few CAD designs of what the different final outcomes could look like but these were not to scale and were only an illustration of what it could look like. I used a tutorial to find out how to make the control knob and I think it turned out really quite cool!!!
+
+<img width="685" height="698" alt="image" src="https://github.com/user-attachments/assets/5ade1730-6a54-4ca2-b53a-5e69966d9cb6" />
+<img width="488" height="270" alt="image" src="https://github.com/user-attachments/assets/84079117-028f-43c2-a879-cd047191312b" />
+
 
 Hours Spent: 2.5Hrs
 
