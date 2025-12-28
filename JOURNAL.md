@@ -66,7 +66,7 @@ Emile Berliner was the first to create a practical microphone in 1876. He develo
 <img width="402" height="230" alt="image" src="https://github.com/user-attachments/assets/63685491-403a-4ca8-847a-b4f7b131fff7" />
 <img width="268" height="232" alt="image" src="https://github.com/user-attachments/assets/a5d5b0b8-f7b5-4393-80ea-89cd31daa00f" />
 
-Hours Spent: 2Hrs
+Hours Spent: 1.5Hrs
 
 ## 10/11/25 - CAD model design
 
