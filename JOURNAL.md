@@ -330,7 +330,7 @@ I added in the pads and remade my PCB. Again, using the multimeters' continuity 
 <img width="387" height="231" alt="image" src="https://github.com/user-attachments/assets/0b0bdfa5-8d3c-4acf-9994-e0d7dfc819d1" />
 <img width="362" height="237" alt="image" src="https://github.com/user-attachments/assets/5d68946d-fd5c-496b-9932-0d1b6d78b969" />
 
-Hours Spent: 4hrs
+Hours Spent: 3.5hrs
 
 ## 2/12/25
 
@@ -410,7 +410,7 @@ I began designing my final PCB: the TDA7266 amplifier with the microphone. This 
 
 I can't wait to finish it and I'm so close but unfortunately, this as far as I can get for now with this project as I have exams coming up :( 
 
-Hours Spent: 2Hrs
+Hours Spent: 1.5Hrs
 
 
 
