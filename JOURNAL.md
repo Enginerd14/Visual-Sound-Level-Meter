@@ -4,7 +4,7 @@ I looked into the various methods of making a VU meter. One of the methods I dis
 <img width="531" height="235" alt="image" src="https://github.com/user-attachments/assets/05dbb6f9-f467-4926-9757-a3f85428fc5c" />
 <img width="412" height="260" alt="image" src="https://github.com/user-attachments/assets/fb74f05c-16f3-4d34-84a1-c21c48ac74a5" />
 
-Hours Spent: 2.5hrs
+Hours Spent: 1.5hrs
 
 ## 5/11/25 - Researching methods
 I found another way of making a VU meter. This can be done through a LED bar graph and a LM39_ _ IC. The LED bar graph is composed of 10 LEDs stacked on top of each other to create a visual scale using light and colour. Most LEDs require resistors and this is the same for the LED bar graph. However, the LM39_ _,which is bar graph driver IC that is complementary to the LED bar graph, has a built in network of resistors within the chip itself. Thus, I will not require ten extra LEDs for the LEDs, reducing the bill of materials for my project.  The LM39_ _ driver comes in 3 variations: LM3914, LM3915 and LM3916. The LM3914 is a linear display used mainly in alarms and voltmeters. The LM3915 is a logarithmic display incremented by 3dB to turn each LED on after the previous one making it a good contender for a VU meter. The LM3916 is designed specifically for a VU meter which is a volume unit meter or also known as an audio visualizer therefore being a strong choice for this project. They all use the same circuit but have different levels of sensitivity to volume.  A demonstration of the circuits are on the next slide.
@@ -13,7 +13,7 @@ I found another way of making a VU meter. This can be done through a LED bar gra
 <img width="308" height="364" alt="image" src="https://github.com/user-attachments/assets/2b02a44c-2d47-43b9-892e-10e685477348" />
 <img width="271" height="362" alt="image" src="https://github.com/user-attachments/assets/25c81673-db5a-490a-87c1-160ab57af953" />
 
-Hours Spent: 3Hrs
+Hours Spent: 2Hrs
 
 ## 7/11/25 - Researching methods
 
@@ -24,7 +24,7 @@ The third and final method for making this project is to use transistors. An exa
 <img width="560" height="219" alt="image" src="https://github.com/user-attachments/assets/03fca261-90d7-4a37-9a43-bebe36b46675" />
 <img width="352" height="248" alt="image" src="https://github.com/user-attachments/assets/9df71e3f-a44a-4c99-9e98-81c5fc5fcf61" />
 
-Hours Spent: 2.5Hrs
+Hours Spent: 1.5Hrs
 
 ## 9/11/25 - Chosen Method
 
@@ -80,7 +80,7 @@ Hours Spent: 2.5Hrs
 
 ## 13/11/25 - Finding out how the LM3915 works
 
-I studied the datasheet intensely to find out how the circuit works. This is what I found...
+I studied the datasheet intensely to find out how the circuit works. There was a LOT of information on there but I think this is all of the most important info...
 
 The LM3915 is an analogue display driver that takes a input voltage to drive a 10 segment LED bar graph/ 10 LEDs using an internal logarithmic scale which increments by 3dB per step. This is ideal for sound applications as it matches how we perceive loudness.
 
@@ -109,7 +109,7 @@ To start prototyping my project, I first attempted to breadboard the LM3915 circ
 
 <img width="633" height="295" alt="image" src="https://github.com/user-attachments/assets/3a063a26-2a87-4f97-87a9-aab5ce019e4e" />
 
-Hours Spent: 3Hrs
+Hours Spent: 1.5Hrs
 
 ## 16/11/25 - 2nd Iteration of LM3915
 
@@ -125,7 +125,7 @@ However, again, the circuit didn’t work completely as expected. All of the LED
 
 <img width="619" height="259" alt="image" src="https://github.com/user-attachments/assets/0e320b66-aae3-4384-b656-bbc8560e5bc1" />
 
-Hours Spent: 3.5Hrs
+Hours Spent: 2Hrs
 
 ## 17/11/25 - 3rd Iteration of LM3915
 
