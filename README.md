@@ -6,7 +6,11 @@ I decided I want to make this because firstly I think they look really cool and 
 
 ## PCB
 
-<img width="467" height="340" alt="image" src="https://github.com/user-attachments/assets/2bdd22e7-c1ef-48d0-9437-24915439f4aa" />
+<img width="626" height="781" alt="image" src="https://github.com/user-attachments/assets/f1b3e63a-50b9-4fc1-b60c-f39f1f3ff9ad" />
+
+<img width="1043" height="984" alt="image" src="https://github.com/user-attachments/assets/e118b72f-0895-46cc-8f65-ed8947ef8765" />
+
+<img width="542" height="773" alt="image" src="https://github.com/user-attachments/assets/299b4f36-9a54-4f1d-b137-3612d544cf40" />
 
 ## CAD
 
@@ -15,7 +19,9 @@ I decided I want to make this because firstly I think they look really cool and 
 
 ## Schematic
 
-<img width="434" height="295" alt="image" src="https://github.com/user-attachments/assets/2b5e5acc-418e-4118-89b4-e2121a9cc966" />
+<img width="536" height="915" alt="image" src="https://github.com/user-attachments/assets/3eae4e49-07d7-498d-86b5-524a0292858b" />
+
+<img width="1028" height="626" alt="image" src="https://github.com/user-attachments/assets/16f5275e-32bc-48c1-86fc-ce9c4f910c8e" />
 
 ## BOM
 
