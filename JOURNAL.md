@@ -440,3 +440,18 @@ I uploaded it to JLCPCB and saw that my PCBs would be under 10gbp in total but I
 https://lapse.hackclub.com/timelapse/Xt3aB62gZel_
 
 Hours Spent: 1Hrs
+
+## 09/02/26 - Producing my new PCBs 
+
+Same as I had done many times before, I produced my PCBs. I made the LED PCB, the control/LM3915 PCB and the TDA7266 PCB with a small PCB for a mic and a switch. In total I made 5 PCBs today. As always, I used a multimeter to test for continuity of tracks and once I confirmed everything was working, I began drilling the holes in the PCB for the components. I noticed that I had missed 2 pads for the power wires going to the TDA7266 so I drilled holes close to the tracks without actually touching the tracks. Then I soldered a wire through the holes and used solder to connect it to the tracks. 
+
+Hours Spent: 2Hrs
+
+## 09/02/26 - Soldering my new PCB
+
+I completed the soldering of all of the components of my new PCBs. I then began testing my main LM3915 PCB. I tried to use my old breadboard where I produced the prototype circuits however I noticed that my once working circuit weren't working anymore and that the power supply was showing that there was a short circuit. I think the breadboard itself is damaged so I used another breadboard instead. It was difficult to connect the wires of my PCB to the breadboard because I was using multistrand wire instead of single strand wire so they just kept popping out. Eventually I managed to keep them in long enough to test it and prove it works and take a picture. Thankfully, when I connected the signal pin to plus volts all the LEDs I had connected were on showing that the PCB works. Also the ICs weren't overheating and the power supply only had a green light so luckily there were no short circuits.
+
+<img width="543" height="658" alt="image" src="https://github.com/user-attachments/assets/6c47be39-c04a-450b-bfb7-c73b9616a4bb" />
+
+Hours Spent: 1.5Hrs
+
