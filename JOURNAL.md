@@ -455,3 +455,28 @@ I completed the soldering of all of the components of my new PCBs. I then began 
 
 Hours Spent: 1.5Hrs
 
+## 10/02/26 - Soldering my new PCBs together
+
+Now that I knew that my main PCB was working, I began connecting them all together. If this doesn’t work in the end, I will cry. Then I think I will have to try ANOTHER PCB with all the components on one PCB instead. After a little bit of time, I finally managed to solder all the wires of the PCBs together connecting them all. I used a little bit of masking tape just for a little bit of cable management and also to relieve some of the stress of wires pulling when I move the PCBs around. I didn’t solder two of the LED bar graphs as they haven’t actually arrived yet but I can still test it until then. 
+
+I connected the wires from the switch to my breadboard.
+
+I slid the switch…..
+
+AND….
+
+Yea it didn’t work again....
+
+The power supply was showing a short circuit was happening somewhere. After inspecting all the tracks for a while, I found that the LED bar graphs may be touching the pins of the chip when the PCBs were stacked. Therefore, I used some electrical insulating tape over the ICs to ensure no connection was being made. However after testing this, no change occurred. Then I looked at the PCBs again carefully and realised that the switch was wired wrong. But that shouldn’t be causing a short circuit. Regardless, I fixed the switch’s wiring hoping it would magically be fixed. 
+
+Surprise! It wasn’t. 
+
+I have no idea what the issue is and I have run out of time today. I know it works as my breadboard works perfectly but everytime I replicate it onto a PCB, it stops working. Reboot is ending tomorrow tho so I will have to submit my working breadboard for now but I will get this PCB to work eventually.
+
+<img width="563" height="725" alt="image" src="https://github.com/user-attachments/assets/b4c88883-d4da-4a6d-9e8d-cf575de66d30" />
+
+<img width="1083" height="403" alt="image" src="https://github.com/user-attachments/assets/47460a29-6b23-4f7f-bf42-f49e9379c23a" />
+
+<img width="449" height="291" alt="image" src="https://github.com/user-attachments/assets/c22ad865-dfb1-4750-9cb7-1bfbcff3d10d" />
+
+Hours Spent: 2.1Hrs
