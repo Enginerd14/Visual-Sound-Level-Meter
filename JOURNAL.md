@@ -445,4 +445,26 @@ I made my new PCBs and I completed the soldering of all of the components of my 
 
 Hours Spent: 1.5Hrs
 
+## 23/02/26 - Soldering my new PCB
 
+After soldering all the PCBs together, I found that it didn't work. the LEDs weren't on as the pin headers and sockets weren't making contact because of the solder joints. Using male to male dupont wires, I was able to test each LED segment to see whether the LM3915 PCB was working as expected. I connected the signal pin to a potentiometer and connected one side of the dupont wire to the pin socket on the LM3915 PCB and the other end of the wire to the breadboard which was connected to the LED bar graph. Upon powering on the PCB and the breadboard, all of the LEDs turned on except the 7th LED. After using a logic probe, I found that the LED should have been working. I thought that the LED bar graph was damaged so I replaced it however I had the same issue. After moving the bar graph down, the 7th LED worked but the 8th LED stopped working. This means that the track in the breadboard does not work. As I changed the resistance of the potentiometer, the LEDs turned on and off sequentially proving that the first section of the LM3915 PCB works. I repeated this with the other sections receiving the same result proving that the LM3915 PCB works as expected.
+
+
+
+Hours Spent: 1Hrs
+
+## 24/02/26 - Soldering my new PCB
+
+As the LM3915 PCB was working, I diverted my attention to the TDA7266 and the Microphone PCB. After connecting it to power, I ensured that the TDA7266 chip was not overheating and that there was no short circuit occurring. I used a stereo socket to bypass the microphone and test whether the TDA7266 was working as expected. Using a logic probe, I was able to confirm that the signal out pin of the TDA7266 was producing the required output when using the stereo socket but not when using the microphone. After inspecting the microphone PCB and the circuit diagram for an electret microphone, I realised that the resistor should have been connected to plus volts not ground. I was able to fix this and test the TDA7266 with the LM3915. This produced the desired result however even when there was little to no volume, LEDs 1 to 4 remained on.
+
+
+
+Hours Spent: 1Hrs
+
+## 24/02/26 - Soldering my new PCB
+
+As the LM3915 PCB was working, I diverted my attention to the TDA7266 and the Microphone PCB. After connecting it to power, I ensured that the TDA7266 chip was not overheating and that there was no short circuit occurring. I used a stereo socket to bypass the microphone and test whether the TDA7266 was working as expected. Using a logic probe, I was able to confirm that the signal out pin of the TDA7266 was producing the required output when using the stereo socket but not when using the microphone. After inspecting the microphone PCB and the circuit diagram for an electret microphone, I realised that the resistor should have been connected to plus volts not ground. I was able to fix this and test the TDA7266 with the LM3915. This produced the desired result however even when there was little to no volume, LEDs 1 to 4 remained on.
+
+
+
+Hours Spent: 1Hrs
