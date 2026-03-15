@@ -245,7 +245,7 @@ Both circuits worked as expected individually, but when combining the two, they 
 https://github.com/user-attachments/assets/a47a75ed-9d45-499d-acfb-030a4748a6d8
 https://youtu.be/v66TnnIR2ss
 
-Hours Spent: 2.5hrs
+Hours Spent: 1.5hrs
 
 ## 29/21/25 - Designing the PCB
 
@@ -264,7 +264,7 @@ I now had to create the PCB to have the LM3915 cascading circuit 3 times. I conn
 https://youtu.be/F8g8QQieGRA
 https://github.com/user-attachments/assets/5b7bbdbe-f083-471c-ab66-015706b1e16d
 
-Hours Spent: 2Hrs
+Hours Spent: 1.5Hrs
 
 ## 30/12/25 - Fixing my final PCB
 
@@ -305,7 +305,7 @@ I added in the pads and remade my PCB. Again, using the multimeters' continuity 
 <img width="387" height="231" alt="image" src="https://github.com/user-attachments/assets/0b0bdfa5-8d3c-4acf-9994-e0d7dfc819d1" />
 <img width="362" height="237" alt="image" src="https://github.com/user-attachments/assets/5d68946d-fd5c-496b-9932-0d1b6d78b969" />
 
-Hours Spent: 2.5hrs
+Hours Spent: 1.5hrs
 
 ## 3/01/26
 
@@ -356,17 +356,11 @@ I decided to completely redesign my PCB and start from scratch. This was extreme
 <img width="428" height="307" alt="image" src="https://github.com/user-attachments/assets/508504e3-0825-4bcf-9e40-472b345b2cb4" />
 <img width="658" height="503" alt="image" src="https://github.com/user-attachments/assets/001398ef-a524-4d61-9829-1116ccaf96a1" />
 
-Hours Spent: 2Hrs
+Hours Spent: 1.5Hrs
 
 ## 9/01/26 - Producing the redesigned main PCB
 
 Once more, I produced my PCB and tested the continuity using a multimeter. Once ensuring all tracks were connected, I promptly began the drilling of ALL the holes. Yes All 200 :(
-
-<img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/1de8ff2a-ece3-4670-9228-99cc21aa90d7" />
-
-Hours Spent: 1.5Hrs
-
-## 10/01/26 - Soldering my PCB
 
 I began and managed to complete all of the soldering of my PCB. I decided not to solder every wire this time, only a couple for testing first. 
 
@@ -374,9 +368,11 @@ I connected both PCBs. I connected the power wires to my breadboard. And then I 
 
 And IT WORKED!!!!
 
-Hours Spent: 1.5hrs
+<img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/1de8ff2a-ece3-4670-9228-99cc21aa90d7" />
 
-## 12/12/25 - TDA7266 PCB
+Hours Spent: 1.5Hrs
+
+## 12/01/25 - TDA7266 PCB
 
 I began designing my final PCB: the TDA7266 amplifier with the microphone. This was difficult as my working protoype was slighlty different to the schematic on the datasheet, but I managed in the end using a multimeter to test the values of all my components in my PCB. 
 
@@ -441,42 +437,12 @@ https://lapse.hackclub.com/timelapse/Xt3aB62gZel_
 
 Hours Spent: 1Hrs
 
-## 09/02/26 - Producing my new PCBs 
-
-Same as I had done many times before, I produced my PCBs. I made the LED PCB, the control/LM3915 PCB and the TDA7266 PCB with a small PCB for a mic and a switch. In total I made 5 PCBs today. As always, I used a multimeter to test for continuity of tracks and once I confirmed everything was working, I began drilling the holes in the PCB for the components. I noticed that I had missed 2 pads for the power wires going to the TDA7266 so I drilled holes close to the tracks without actually touching the tracks. Then I soldered a wire through the holes and used solder to connect it to the tracks. 
-
-Hours Spent: 2Hrs
-
 ## 09/02/26 - Soldering my new PCB
 
-I completed the soldering of all of the components of my new PCBs. I then began testing my main LM3915 PCB. I tried to use my old breadboard where I produced the prototype circuits however I noticed that my once working circuit weren't working anymore and that the power supply was showing that there was a short circuit. I think the breadboard itself is damaged so I used another breadboard instead. It was difficult to connect the wires of my PCB to the breadboard because I was using multistrand wire instead of single strand wire so they just kept popping out. Eventually I managed to keep them in long enough to test it and prove it works and take a picture. Thankfully, when I connected the signal pin to plus volts all the LEDs I had connected were on showing that the PCB works. Also the ICs weren't overheating and the power supply only had a green light so luckily there were no short circuits.
+I made my new PCBs and I completed the soldering of all of the components of my new PCBs. I then began testing my main LM3915 PCB. I tried to use my old breadboard where I produced the prototype circuits however I noticed that my once working circuit weren't working anymore and that the power supply was showing that there was a short circuit. I think the breadboard itself is damaged so I used another breadboard instead. It was difficult to connect the wires of my PCB to the breadboard because I was using multistrand wire instead of single strand wire so they just kept popping out. Eventually I managed to keep them in long enough to test it and prove it works and take a picture. Thankfully, when I connected the signal pin to plus volts all the LEDs I had connected were on showing that the PCB works. Also the ICs weren't overheating and the power supply only had a green light so luckily there were no short circuits.
 
 <img width="543" height="658" alt="image" src="https://github.com/user-attachments/assets/6c47be39-c04a-450b-bfb7-c73b9616a4bb" />
 
 Hours Spent: 1.5Hrs
 
-## 10/02/26 - Soldering my new PCBs together
 
-Now that I knew that my main PCB was working, I began connecting them all together. If this doesn’t work in the end, I will cry. Then I think I will have to try ANOTHER PCB with all the components on one PCB instead. After a little bit of time, I finally managed to solder all the wires of the PCBs together connecting them all. I used a little bit of masking tape just for a little bit of cable management and also to relieve some of the stress of wires pulling when I move the PCBs around. I didn’t solder two of the LED bar graphs as they haven’t actually arrived yet but I can still test it until then. 
-
-I connected the wires from the switch to my breadboard.
-
-I slid the switch…..
-
-AND….
-
-Yea it didn’t work again....
-
-The power supply was showing a short circuit was happening somewhere. After inspecting all the tracks for a while, I found that the LED bar graphs may be touching the pins of the chip when the PCBs were stacked. Therefore, I used some electrical insulating tape over the ICs to ensure no connection was being made. However after testing this, no change occurred. Then I looked at the PCBs again carefully and realised that the switch was wired wrong. But that shouldn’t be causing a short circuit. Regardless, I fixed the switch’s wiring hoping it would magically be fixed. 
-
-Surprise! It wasn’t. 
-
-I have no idea what the issue is and I have run out of time today. I know it works as my breadboard works perfectly but everytime I replicate it onto a PCB, it stops working. Reboot is ending tomorrow tho so I will have to submit my working breadboard for now but I will get this PCB to work eventually.
-
-<img width="563" height="725" alt="image" src="https://github.com/user-attachments/assets/b4c88883-d4da-4a6d-9e8d-cf575de66d30" />
-
-<img width="1083" height="403" alt="image" src="https://github.com/user-attachments/assets/47460a29-6b23-4f7f-bf42-f49e9379c23a" />
-
-<img width="449" height="291" alt="image" src="https://github.com/user-attachments/assets/c22ad865-dfb1-4750-9cb7-1bfbcff3d10d" />
-
-Hours Spent: 2.1Hrs
