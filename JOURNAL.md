@@ -445,26 +445,52 @@ I made my new PCBs and I completed the soldering of all of the components of my 
 
 Hours Spent: 1.5Hrs
 
-## 23/02/26 - Soldering my new PCB
+## 23/02/26 - Soldering my new PCBs
 
 After soldering all the PCBs together, I found that it didn't work. the LEDs weren't on as the pin headers and sockets weren't making contact because of the solder joints. Using male to male dupont wires, I was able to test each LED segment to see whether the LM3915 PCB was working as expected. I connected the signal pin to a potentiometer and connected one side of the dupont wire to the pin socket on the LM3915 PCB and the other end of the wire to the breadboard which was connected to the LED bar graph. Upon powering on the PCB and the breadboard, all of the LEDs turned on except the 7th LED. After using a logic probe, I found that the LED should have been working. I thought that the LED bar graph was damaged so I replaced it however I had the same issue. After moving the bar graph down, the 7th LED worked but the 8th LED stopped working. This means that the track in the breadboard does not work. As I changed the resistance of the potentiometer, the LEDs turned on and off sequentially proving that the first section of the LM3915 PCB works. I repeated this with the other sections receiving the same result proving that the LM3915 PCB works as expected.
 
-
+<img width="262" height="379" alt="image" src="https://github.com/user-attachments/assets/21a44649-11fd-4553-aed7-ce657d74150e" />
+<img width="239" height="374" alt="image" src="https://github.com/user-attachments/assets/56e7f9b3-dabf-44d3-8646-2fb6a467771e" />
+<img width="225" height="379" alt="image" src="https://github.com/user-attachments/assets/ade1b96a-1287-4bec-b33b-4e7fb701c8ab" />
 
 Hours Spent: 1Hrs
 
-## 24/02/26 - Soldering my new PCB
+## 24/02/26 - Fixing my PCBs
 
 As the LM3915 PCB was working, I diverted my attention to the TDA7266 and the Microphone PCB. After connecting it to power, I ensured that the TDA7266 chip was not overheating and that there was no short circuit occurring. I used a stereo socket to bypass the microphone and test whether the TDA7266 was working as expected. Using a logic probe, I was able to confirm that the signal out pin of the TDA7266 was producing the required output when using the stereo socket but not when using the microphone. After inspecting the microphone PCB and the circuit diagram for an electret microphone, I realised that the resistor should have been connected to plus volts not ground. I was able to fix this and test the TDA7266 with the LM3915. This produced the desired result however even when there was little to no volume, LEDs 1 to 4 remained on.
 
+<img width="286" height="210" alt="image" src="https://github.com/user-attachments/assets/97d09bef-0cf6-4c0c-89a9-20855c2392fd" />
 
+Hours Spent: 1Hrs
+
+## 25/02/26 - Soldering my fixed PCBs together
+
+I re breadaborded the microphone circuit in the breadboarded and changed the value of the capacitor and this fixed the issue so I repeated this on the PCB as well. I soldered the working PCBs together in order to test the final project. Then, I used the power supply to confirm it worked as expected when all the PCBs were combined. 
+<img width="367" height="540" alt="image" src="https://github.com/user-attachments/assets/ada4ae63-b603-4dc0-be31-0f3d85ec9f9f" />
 
 Hours Spent: 1Hrs
 
-## 24/02/26 - Soldering my new PCB
+## 26/02/26 - Remaking the LED PCB
 
-As the LM3915 PCB was working, I diverted my attention to the TDA7266 and the Microphone PCB. After connecting it to power, I ensured that the TDA7266 chip was not overheating and that there was no short circuit occurring. I used a stereo socket to bypass the microphone and test whether the TDA7266 was working as expected. Using a logic probe, I was able to confirm that the signal out pin of the TDA7266 was producing the required output when using the stereo socket but not when using the microphone. After inspecting the microphone PCB and the circuit diagram for an electret microphone, I realised that the resistor should have been connected to plus volts not ground. I was able to fix this and test the TDA7266 with the LM3915. This produced the desired result however even when there was little to no volume, LEDs 1 to 4 remained on.
+Now that I had confirmed the project was working as expected, I decided to remake my LED PCB in order to fix the Pin headers to remove the need for the wires between the PCBs. I used the same process to make the PCB as outlined before by using the acid etch tank, drilling the holes and soldering the components. However this time, I soldered the pin headers further out from the PCB so that they would correctly seat into the pin sockets. Once I had soldered all the components, itested the PCB by seating it into the sockets on the LM3915 PCB. When powering the circuit on, everything worked as expected. This meant I could replace the LED PCB. 
 
+<img width="554" height="243" alt="image" src="https://github.com/user-attachments/assets/52911f3f-89d6-4248-8acf-52f34635ce12" />
 
+Hours Spent: 1.1Hrs
+
+## 27/02/26 - Designing casing
+
+I began designing the case in Solidworks. I used a vernier caliper to measure the size of the PCB so that I could correctly size the case so that the components would fit easily. I began with a rectangle and extruded it to create a solid body. Then, I used the fillet tool to round the edges to provide rigidity and also make it more appealing. After that, I used the split tool to create two separate bodies: the base and the lid. Then I added the cutouts for the LEDs, the microphone and the switch in the base and added a lip in the lid that would slot into the base. This would allow the case to open and close without using screws. 
+
+<img width="232" height="333" alt="image" src="https://github.com/user-attachments/assets/307d85eb-f873-4595-9963-25675affd6e4" />
 
 Hours Spent: 1Hrs
+
+## 28/02/26 - Finsihing the device
+
+I assembled everything and it was ready to test. I turned it on and it worked exactly as I wanted it to.
+
+https://youtube.com/shorts/JQ9ZsPvnyYY?feature=share
+
+Hours Spent: 0.5Hrs
+
