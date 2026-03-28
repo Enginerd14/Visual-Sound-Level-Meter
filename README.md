@@ -14,8 +14,7 @@ I decided I want to make this because firstly I think they look really cool and 
 
 ## CAD
 
-<img width="488" height="270" alt="image" src="https://github.com/user-attachments/assets/d3edd21b-9be0-4899-b4c7-f24502da0772" />
-<img width="685" height="698" alt="image" src="https://github.com/user-attachments/assets/1bff5f61-331d-47d2-a3db-6f1ad4d8d9aa" />
+<img width="232" height="333" alt="image" src="https://github.com/user-attachments/assets/80f0ff54-acd1-49cb-aabb-9f8846334806" />
 
 ## Schematic
 
