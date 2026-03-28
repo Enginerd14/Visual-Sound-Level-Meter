@@ -14,9 +14,14 @@ I decided I want to make this because firstly I think they look really cool and 
 
 ## CAD
 
+<img width="685" height="698" alt="image" src="https://github.com/user-attachments/assets/5647ecec-e39b-4762-a100-ea1fef846e2a" />
+
 <img width="232" height="333" alt="image" src="https://github.com/user-attachments/assets/80f0ff54-acd1-49cb-aabb-9f8846334806" />
 
 ## Schematic
+
+
+<img width="488" height="270" alt="image" src="https://github.com/user-attachments/assets/b36761ac-4f61-4949-9815-27f68b6f0e3d" />
 
 <img width="536" height="915" alt="image" src="https://github.com/user-attachments/assets/3eae4e49-07d7-498d-86b5-524a0292858b" />
 
