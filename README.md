@@ -25,10 +25,11 @@ I decided I want to make this because firstly I think they look really cool and 
 
 ## BOM
 
-| Component            | Quantity | Total Cost £|
-|----------------------|----------|-------------|
-| LM3915               |    6     |     2.70    |
-| TDA7266              |    1     |     3.00    |
-| Microphone           |    1     |     0.60    |
-| LED Bar Graphs       |    12    |     3.00    |
-| Passive Components   |   ~10    |     0.50    |
+
+| Component              | Quantity         | Cost (£) | Link |
+|------------------------|------------------|----------|------|
+| LM3915                | 6                | 2.99     | [LM3915 10Pcs](https://www.aliexpress.com/item/32946954434.html) |
+| TDA7266               | 1                | 2.29     | [TDA7266](https://www.aliexpress.com/item/1005010770316681.html) |
+| Mic                   | 1                | 1.29     | [electret mic](https://www.aliexpress.com/item/4000037505554.html) |
+| Passive components    | Already have     | ~        | ~ |
+| **Total cost**        |                  | **£6.57**| $8.72     |
