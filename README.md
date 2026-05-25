@@ -4,6 +4,9 @@ A visual sound level meter is a device that uses LEDs to react to and display so
 
 I decided I want to make this because firstly I think they look really cool and secondly, they have a real world purpose. People listen to music too loud. There are studies linking hearing loss to earbuds use and going to concerts and being loud environment as a whole. I wanted to make this device to alet people when the environemnt is too loud and potentially damaging to their hearing. 
 
+<img width="380" height="705" alt="17797421683956238931705403245987" src="https://github.com/user-attachments/assets/2d5efa18-fe26-42f1-8091-82f200409e1b" />
+
+
 ## PCB
 
 <img width="626" height="781" alt="image" src="https://github.com/user-attachments/assets/f1b3e63a-50b9-4fc1-b60c-f39f1f3ff9ad" />
